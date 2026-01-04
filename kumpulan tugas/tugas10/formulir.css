@@ -1,0 +1,86 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f4f6fb, #eaeaf2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+
+/* CARD UTAMA */
+.list {
+  background: #ffffff;
+  width: 90%;
+  max-width: 520px;
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* JUDUL */
+.list h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* LIST */
+.list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ITEM */
+.list li a {
+  display: block;
+  text-decoration: none;
+  background: #f8f9fc;
+  padding: 14px 18px;
+  border-radius: 14px;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+/* HOVER */
+.list li a:hover {
+  background: #ffffff;
+  transform: translateX(6px);
+  border-left: 4px solid #7b5cff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ACTIVE */
+.list li a:active {
+  transform: scale(0.98);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .list {
+    padding: 26px 22px;
+  }
+
+  .list h1 {
+    font-size: 1.5rem;
+  }
+
+  .list li a {
+    font-size: 0.9rem;
+  }
+}
